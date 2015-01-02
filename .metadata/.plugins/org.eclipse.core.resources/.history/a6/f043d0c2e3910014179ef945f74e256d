@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Solution {
+
+    public static List<List<Integer>> generate(int numRows) {
+    	List<List<Integer>> list = new ArrayList<List<Integer>>();
+    	if (numRows < 1) return list;
+        if (numRows == 1) {
+        	List<Integer> row = new ArrayList<Integer>();
+        	row.add(1);
+        	list.add(row);
+        	return list;
+        }
+        list = generate(numRows - 1);
+        List<Integer> row = new ArrayList<Integer>();
+        List<Integer> prev = list.get(list.size() - 1);
+        row.add(1);
+        for (int i = 1 ; i <= numRows - 2; i++) {
+        	row.add(prev.get(i - 1) + prev.get(i));
+        }
+        row.add(1);
+        list.add(row);
+        return list;
+    }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(generate(0));
+	}
+
+}

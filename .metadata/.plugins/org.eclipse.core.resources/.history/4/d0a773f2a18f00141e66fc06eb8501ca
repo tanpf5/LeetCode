@@ -1,0 +1,15 @@
+
+public class Solution {
+
+    public static String countAndSay(int n) {
+    	if (n == 1) return "1";
+        String form = countAndSay(n - 1);
+        
+    }
+    
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.print(countAndSay(5));
+	}
+
+}
