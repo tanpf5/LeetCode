@@ -1,0 +1,37 @@
+
+public class Solution {
+
+    public static void merge(int A[], int m, int B[], int n) {
+    	int i = 0, j = 0, k = 0;
+    	int c[] = new int[m + n];
+    	while (i < m || j < n) {
+    		if (i == m) {
+    			c[k] = B[j];
+    			++k; ++j;
+    			continue;
+    		}
+    		if (j == n) {
+    			c[k] = A[i];
+    			++k; ++i;
+    			continue;
+    		}
+    		if (A[i] <= B[j]) {
+    			c[k] = A[i];
+    			++k; ++i;
+    		}
+    		else {
+    			c[k] = B[j];
+    			++k; ++j;
+    		}
+    	}
+    	A = c;
+    }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int A[] = {};
+		int B[] = {1};
+		merge(A, 0, B, 1);
+	}
+
+}
