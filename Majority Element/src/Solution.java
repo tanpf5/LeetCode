@@ -4,6 +4,7 @@ import java.util.Map;
 
 public class Solution {
     public static int majorityElement(int[] num) {
+    	if (num.length == 1) return num[0];
     	Map a = new HashMap();
         for (int i = 0; i < num.length; i++) {
         	if (a.get(num[i]) == null) {

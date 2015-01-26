@@ -10104,3 +10104,33 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.core.net 1 0 2015-01-18 15:01:08.532
 !MESSAGE System property http.nonProxyHosts has been set to local„ÄÅ169.254/16Ôºåliveupdate.symantec.comÔºåliveupdate.symantecliveupdate.com|*.local„ÄÅ169.254/16Ôºåliveupdate.symantec.comÔºåliveupdate.symantecliveupdate.com by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2015-01-20 23:12:38.939 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Vigery/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/Vigery/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-01-20 23:12:47.391
+!MESSAGE System property http.nonProxyHosts has been set to local„ÄÅ169.254/16Ôºåliveupdate.symantec.comÔºåliveupdate.symantecliveupdate.com|*.local„ÄÅ169.254/16Ôºåliveupdate.symantec.comÔºåliveupdate.symantecliveupdate.com by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2015-01-22 12:56:58.765 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Vigery/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/Vigery/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-01-22 12:57:14.933
+!MESSAGE System property http.nonProxyHosts has been set to local„ÄÅ169.254/16Ôºåliveupdate.symantec.comÔºåliveupdate.symantecliveupdate.com|*.local„ÄÅ169.254/16Ôºåliveupdate.symantec.comÔºåliveupdate.symantecliveupdate.com by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2015-01-24 20:20:47.699 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Vigery/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/Vigery/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-01-24 20:21:05.299
+!MESSAGE System property http.nonProxyHosts has been set to local„ÄÅ169.254/16Ôºåliveupdate.symantec.comÔºåliveupdate.symantecliveupdate.com|*.local„ÄÅ169.254/16Ôºåliveupdate.symantec.comÔºåliveupdate.symantecliveupdate.com by an external source. This value will be overwritten using the values from the preferences
