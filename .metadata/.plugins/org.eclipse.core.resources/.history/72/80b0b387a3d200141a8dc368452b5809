@@ -1,0 +1,21 @@
+import java.util.Arrays;
+
+
+public class Solution {
+	
+    public static int threeSumClosest(int[] num, int target) {
+        Arrays.sort(num);
+        int ans = Math.abs(num[0] + num[1] + num[2] - target);
+        int n = num.length;
+        for (int i = 0; i < n - 2; i++) {
+        	int sum = target - num[i];
+        }
+    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] a = {-1, 2, 1, -4};
+		System.out.println(Solution.threeSumClosest(a, 1));
+	}
+
+}

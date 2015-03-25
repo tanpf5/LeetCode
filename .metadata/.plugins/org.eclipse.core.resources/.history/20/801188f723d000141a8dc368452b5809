@@ -1,0 +1,25 @@
+
+public class Solution {
+    public static ListNode reverseBetween(ListNode head, int m, int n) {
+        ListNode new_head = new ListNode(0);
+        new_head.next = head;
+        ListNode head_copy = new_head;
+        while (m > 1) head_copy = head_copy.next;
+    }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ListNode head = new ListNode(1);
+		head.next = new ListNode(2);
+		head.next.next = new ListNode(3);
+		head.next.next.next = new ListNode(4);
+		head.next.next.next.next = new ListNode(5);
+		ListNode ans = Solution.reverseBetween(head, 2, 4);
+		while (ans.next != null) {
+			System.out.print(ans.val + "->");
+			ans = ans.next;
+		}
+		System.out.println(ans.val);
+	}
+
+}

@@ -1,0 +1,16 @@
+
+public class Solution {
+	public ListNode partition(ListNode head, int x) {
+		if (head == null) return null;
+		ListNode smaller = new ListNode(0);
+		ListNode smaller2 = smaller;
+		ListNode other = new ListNode(0);
+		ListNode other2 = other;
+		while (head != null)
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

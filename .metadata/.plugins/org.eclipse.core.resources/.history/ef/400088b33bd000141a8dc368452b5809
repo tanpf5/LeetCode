@@ -1,0 +1,23 @@
+
+public class Solution {
+    public static ListNode insertionSortList(ListNode head) {
+        
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ListNode head = new ListNode(3);
+		head.next = new ListNode(1);
+		head.next.next = new ListNode(9);
+		head.next.next.next = new ListNode(2);
+		head.next.next.next.next = new ListNode(7);
+		head.next.next.next.next.next = new ListNode(3);
+		head.next.next.next.next.next.next = new ListNode(4);
+		head = Solution.insertionSortList(head);
+		while (head.next != null) {
+			System.out.print(head.val + "->");
+			head = head.next;
+		}
+		System.out.println(head.val);
+	}
+
+}

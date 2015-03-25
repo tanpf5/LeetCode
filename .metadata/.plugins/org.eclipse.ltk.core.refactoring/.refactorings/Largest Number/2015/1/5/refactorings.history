@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Comparator&apos; to &apos;Comp&apos;&#x0A;- Original project: &apos;Largest Number&apos;&#x0A;- Original element: &apos;Comparator&apos;&#x0A;- Renamed element: &apos;Comp&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Comparator&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Comparator.java[Comparator" matchStrategy="1" name="Comp" qualified="false" references="true" similarDeclarations="false" stamp="1422410505374" textual="false" version="1.0"/>
+</session>

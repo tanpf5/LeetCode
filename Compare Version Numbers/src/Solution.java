@@ -33,10 +33,25 @@ public class Solution {
         }
         return 0;
     }
+    
+    public static int compareVersion_better(String version1, String version2) {
+        String []num1 = version1.split("\\.");
+        String []num2 = version2.split("\\.");
+        int i = 0,j = 0;
+        for ( ;i <= num1.length-1 && j <= num2.length-1;i++,j++)
+            if (Integer.parseInt(num1[i]) > Integer.parseInt(num2[j])) return 1;
+            else if (Integer.parseInt(num1[i]) < Integer.parseInt(num2[j])) return -1; 
+        for( ;i <= num1.length-1;i++) 
+            if (Integer.parseInt(num1[i]) != 0) return 1;
+        for( ;j <= num2.length-1;j++) 
+            if (Integer.parseInt(num2[j]) != 0) return -1;
+        return 0;
+}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(compareVersion("3.2.0.0.0", "3.2"));
+		System.out.println(compareVersion_better("3.2.0.0.0", "3.2"));
 	}
 
 }

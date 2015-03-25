@@ -1,34 +1,31 @@
 import java.util.Stack;
 
 public class MinStack {
-	private static int min;
-	private static Stack<Integer> minStack = new Stack<Integer>();
-    public static void push(int x) {
+	int min = Integer.MAX_VALUE;
+	Stack<Integer> minStack = new Stack<Integer>();
+    public void push(int x) {
+    	if (x <= min) {
+    		minStack.push(min);
+    		min = x;
+    	}
         minStack.push(x);
-        min = Math.min(min, x);
     }
-
-    public static void pop() {
+    
+    public void pop() {
+    	if (minStack.peek() == min) {
+    		minStack.pop();
+    		min = minStack.peek();
+    	}
         minStack.pop();
     }
 
-    public static int top() {
+    public int top() {
         return minStack.peek();
     }
 
-    public static int getMin() {
+    public int getMin() {
         return min;
     }
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		push(2);
-		push(-2);
-		push(0);
-		push(8);
-		pop();
-		System.out.println(top());
-		System.out.println(getMin());
-	}
 
 }

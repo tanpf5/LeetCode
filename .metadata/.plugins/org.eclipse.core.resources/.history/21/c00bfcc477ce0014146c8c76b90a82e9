@@ -1,0 +1,10 @@
+
+public class Solution {
+    public static int sumNumbers(TreeNode root) {
+        if (root == null) return 0;
+        return sumOfNumbers(root, 0);
+    }
+	public static void main(String[] args) {
+		
+	}
+}
