@@ -1,0 +1,19 @@
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
+
+
+public class Interview {
+
+	public static void main(String[] args) {
+		//Hash Map/Table
+		Map<Integer, Integer> hm = new HashMap<Integer, Integer>();
+		Map<Integer, Integer> ht = new Hashtable<Integer, Integer>();
+		int key = 0, value = 0;
+		ht.put(key, value);
+		ht.get(key);
+		ht.containsKey(key);
+		ht.containsValue(value);
+	}
+
+}

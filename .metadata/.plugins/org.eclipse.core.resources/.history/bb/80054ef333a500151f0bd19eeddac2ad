@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+
+public class Interview {
+
+	public static void main(String[] args) {
+		// Array
+		//return new int[] {0, 0};
+		int[] nums = new int[5];
+		int[] nums2 = {1, 2, 3, 4, 5};
+		int n = nums.length;
+		Arrays.sort(nums);
+		
+		// List
+		List<Integer> al = new ArrayList<Integer>();
+		LinkedList<Integer> ll = new LinkedList<Integer>();
+		int e = 0;
+		al.add(e);
+		ll.addFirst(e);
+		
+		// Hash Map/Table
+		Map<Integer, Integer> hm = new HashMap<Integer, Integer>();
+		Map<Integer, Integer> ht = new Hashtable<Integer, Integer>();
+		int key = 0, value = 0;
+		ht.put(key, value);
+		ht.get(key);
+		ht.containsKey(key);
+		ht.containsValue(value);
+	}
+
+}
