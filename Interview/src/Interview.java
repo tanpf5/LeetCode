@@ -43,7 +43,7 @@ public class Interview {
 			Math.log(10.2);
 			Math.random(); // return double
 			Random r = new Random();
-			int x= r.nextInt(10);
+			int x = r.nextInt(10);
 			Math.floor(10.2); // return double, 10.0
 			Math.ceil(10.2); // return double, 11.0
 		}
@@ -68,8 +68,10 @@ public class Interview {
 					return a.start - b.start;
 				}	
 			});
+			//Arrays.sort(intervals, (i1, i2) -> i1.start - i2.start); Java SE 8
 			Arrays.asList(nums);
 			Arrays.copyOf(original, newLength);
+			System.arraycopy(nums, 0, nums2, 0, 5);
 		}
 		
 		// List
@@ -130,6 +132,16 @@ public class Interview {
 			q.isEmpty();
 			q.size();
 			q.offer(e);
+			
+			// deque
+			Deque<Integer> deque = new ArrayDeque<>();
+			deque.peekFirst();
+			deque.peekLast();
+			deque.addFirst(1);
+			deque.addLast(2);
+			deque.removeFirst();
+			deque.removeLast();
+			deque.clear();
 		}
 		
 		// Hash Map/Table and Tree map
@@ -150,6 +162,11 @@ public class Interview {
 				int key1 = entry.getKey();
 				int value1 = entry.getValue();
 			}
+			// remove in traverse
+			for (Iterator<Map.Entry<Integer, Integer>> it = tm.entrySet().iterator(); it.hasNext(); ) {
+				Map.Entry<Integer, Integer> entry = it.next();
+				it.remove();
+			}
 			hm.values(); // all values
 			ht.size();
 			ht.isEmpty();
@@ -166,6 +183,14 @@ public class Interview {
 			s.remove(1);
 			s.toArray();
 			int[] result = new int[s.size()];
+			for (int num : s) {
+				
+			}
+			// remove from set when traverse
+			for (Iterator<Integer> it = s.iterator(); it.hasNext(); ) {
+				int x = it.next();
+				it.remove();
+			}
 		}
 		
 		// Heap/PriorityQueue
